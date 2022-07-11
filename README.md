@@ -1,2 +1,3 @@
-# cse-134-hw2
-cse 134-hw2
+# CSE134B-SS20-HW1
+# Name:Zijian Su
+# PID: A17173673
