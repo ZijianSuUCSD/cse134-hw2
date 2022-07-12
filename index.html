@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="images/favicon.ico" rel="icon">
+        <title>HW2 HTML page</title>
+        <!--analytics script will go here-->
+        <script> </script>
+        <!--style should be empty without CSS-->
+        <style> </style>
+    </head>
+        
+    <body>
+        <!--header for Page top and navigation bar-->
+        <header>
+            <picture>
+                <source media="(min-width:796px)" srcset="images/Geisel_Library_1.jpg">
+                <source media="(min-width:564px)" srcset="images/Geisel_Library_2.jpg">
+                <img src="images/Geisel_Library_3.jpg" alt="Library" >
+              </picture>
+            <!--Since I'm not supposed to use CSS, the span here doesn't have any content.-->
+            <h1 id="top"><i><span>Welcome to my page!</span></i></h1> 
+            <strong>Navigation</strong>
+            <hr>
+            <nav>
+                <a href="#info"><b>About me</b></a>   |   
+                <a href="#ED"><b>Education</b></a>   |   
+                <a href="#SK"><b>Skills</b></a>   |   
+                <a href="#PJ"><b>Projects</b></a>   |   
+                <a href="#me"><b>Contact me</b></a>
+            </nav>
+            <img src="images/ucsd.gif" alt="UCSD.gif" height="165" width="680">
+            <aside>"what you see is what you get." </aside>
+            <aside>Click on the triangle below to play BGM</aside>
+            <audio controls>
+                <source src="audio/dreams.mp3" type="audio/mpeg">
+            </audio>
+            <hr>
+            <br>
+        </header>
+        <!--Content assigned according to the navigation bar in main-->
+        <main>
+            <section id="info">
+                <h2><em>About me</em></h2>
+                <fieldset>
+                    <figure>
+                        <img src="images/p.png" alt="picture can't show" height="115" width="90" >
+                        <figcaption>Fig - profile picture</figcaption>
+                    </figure>
+                    <legend>:)</legend>
+                    <table>
+                        <caption><b>Basic information</b></caption>
+                        <colgroup>
+                            <col span="1">
+                        </colgroup>
+                        <tr>
+                            <th>-*-</th>
+                            <th>-*-</th> 
+                        </tr>
+                        <tr>
+                            <td>Name:</td> 
+                            <td>Zijian Su</td> 
+                        </tr>
+                        <tr>
+                            <td>Gender:</td>
+                            <td>Male</td>
+                        </tr>
+                        <tr>
+                            <td>Education:</td>
+                            <td>Undergraduate</td>
+                        </tr>
+                        <tr>
+                            <td>Major:</td>
+                            <td>CS</td>
+                        </tr>
+                        <tr>
+                            <td>Phone number:</td>
+                            <td>1-234-568-8910</td>
+                        </tr>
+                    </table>
+                    <pre>My hobby is playing   "  computer games   "    , they are so interesting!</pre>
+                </fieldset>
+            </section>
+            <p><code>Hello World</code> is where the dream begins.</p>
+            <hr>
+            <section id="ED">
+                <h2>Education </h2>
+                <fieldset>
+                    <h3>School attended:(Click the triangle to see details)</h3>
+                    <details>
+                        <summary>High school</summary>
+                        <ol>
+                            <li>Foreign high school</li>
+                        </ol>
+                    </details>
+                    <details>
+                        <summary>University/College</summary>
+                        <ol>
+                            <li>PCC</li>
+                            <li>UCSD</li>
+                        </ol>
+                        <li>....</li>
+                        <ol start="6">
+                            <li>Some School 1</li>
+                            <li>Some School 2</li>
+                        </ol>
+                    </details>
+                </fieldset>
+                <p>Currently studying in UCSD.</p>
+                <p>More information about UCSD: <a href="https://ucsd.edu/">ucsd.edu</a></p>
+                <video width="320" height="240" controls>
+                    <source src="video/ucsd.mp4" type="video/mp4">
+                </video>
+            </section>
+            <hr>
+            <section id="SK">
+                <h2>Skills</h2>
+                <ul>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>Html</li>
+                  </ul>
+            </section>
+            <hr>
+            <section id="PJ">
+                <h2>Projects</h2>
+                <label for="projects">Project list</label>
+                <select id="projects">
+                    <option>select a project</option>
+                    <optgroup label="C++">
+                        <option>c++ project 1</option>
+                        <option>c++ project 2</option>
+                    </optgroup>
+                    <optgroup label="Python">
+                        <option>Python project 1</option>
+                        <option>Python project 2</option>
+                    </optgroup>
+                </select>
+                <br>
+                <br>
+                <br>
+            </section>
+            <hr>
+            <section id="me">
+                <h2>Contact me</h2>
+                <table>
+                    <tr>
+                        <td>phone number</td> 
+                        <td>1-234-568-8910</td> 
+                    </tr>
+                    <tr>
+                        <td>E-mail</td> 
+                        <td>z5su@ucsd.edu</td> 
+                    </tr>
+                    <tr>
+                        <td>Address</td> 
+                        <td>9500 Gilman Dr, La Jolla, CA 92093</td> 
+                    </tr>
+                </table>
+                <canvas id="testCanvas">Your browser does not support the canvas tag.</canvas>
+                <!--Simple script to use canvas-->
+                <script>
+                    var c = document.getElementById("testCanvas");
+                    var ctx = c.getContext("2d");
+                    ctx.beginPath();
+                    ctx.moveTo(0,50);
+                    ctx.lineTo(100,60);
+                    ctx.lineTo(40,10);
+                    ctx.fill();
+                </script>
+                    
+            </section>
+            <hr>
+            <section id="Survey">
+                <h4>Survey</h4>
+                <svg  width="400" height="10">
+                    <rect width="100%" height="100%" stroke="blue" stroke-width="2" fill="gray">
+                </svg>
+                <div>What do you think of this page?</div>
+                <input type="radio" id="good" name="feeling" value="good">
+                <label for="good">good</label>
+                <input type="radio" id="ok" name="feeling" value="ok">
+                <label for="ok">ok</label>
+                <input type="radio" id="bad" name="feeling" value="bad">
+                <label for="bad">bad</label><br>
+                <label for ="comment">_____Comment</label>
+                <input list="comments" name = "comment" id="comment">
+                <datalist id="comments">
+                    <option value="very good"></option>
+                    <option value="great"></option>
+                    <option value="nice"></option>
+                </datalist>
+                <br>
+                <label for="extracomment">Extra Comment</label><br>
+                <textarea id="extracomment" name="extracomment" rows="3" cols="40">Speak freely!</textarea>
+                <br>
+
+                <!--The content displayed when the button is clicked.-->
+                <!--Since I don't have access to scripts, this feature is on hold for now.-->
+                <template>
+                    <p>Thank you!</p>
+                </template>
+
+                <!--fake submit button-->
+                <button type="button">Submit</button>
+            </section>
+        </main>
+        <hr>
+        <form action="#top" method="get">
+            <button>Back to top</button>
+        </form>
+
+        <footer>
+            <b>Page's README.md</b><br>
+            <iframe src="README.md" title="README" height="70" width="200"></iframe>
+            <p>Author: Zijian Su, BGM form bensound.com</p>
+        </footer>
+
+    </body>
+
+</html>
